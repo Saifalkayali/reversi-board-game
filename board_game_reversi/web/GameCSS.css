@@ -1,0 +1,118 @@
+
+/* 
+    Created on : Sep 28, 2017, 7:23:47 PM
+    Author     : saifalkayali
+*/
+h1{
+    color:black;
+    position: relative;
+    left:200px;
+    
+}
+h2{
+    color:black;
+    position: relative;
+    left:850px;
+    
+}
+.errMsg{
+    color:red;
+    position: relative;
+    left:850px;
+    bottom: 580px;
+    
+}
+.BLACKToken{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+}
+.WHITEToken{
+    border-radius: 2em;
+    width: 40px;
+    height: 40px;
+    background-color:white;
+}
+    
+Body{
+    background-size:100%;
+    position: relative;
+    left:70px;
+    font-family:serif;
+    background-image: url("board.jpg");
+    size:auto;
+    padding:0;
+    
+    height: 0;
+    
+    
+}
+ td, th {
+    
+    border-color:black;
+    background-color:green;
+    padding: 10px;
+    
+    display: table-cell;
+    width:50px;
+    table-layout: fixed;
+    height: 40px;
+    
+}
+table {
+   table-layout:fixed;
+   border-color:black;
+   border-width:thick;
+   position: relative;
+   bottom: 200px;
+   left: 200px;
+}
+.resetBtn{
+    width: 70px;
+    height: 60px;
+    font-size: 1em;
+    background-color: yellow;
+    position: relative;
+    
+    left:850px;
+}
+.quitBtn{
+    width: 70px;
+    height: 60px;
+    font-size: 1em;
+    background-color: red;
+    position: relative;
+    bottom: 607px;
+    left:928px;
+    
+}
+.newBtn{
+    width: 150px;
+    height: 60px;
+    font-size: 1em;
+    background-color: skyblue;
+    position: relative;
+    left:400px;
+}
+label{
+    position: relative;
+    left: 1px;
+    font-size: 20px;
+    font-family:serif;
+    
+}
+.open {
+    height: 45px;
+    width: 50px;
+    background-color:green;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position:relative;
+    left:10px;
+    
+    border-style:none;
+}
+
+

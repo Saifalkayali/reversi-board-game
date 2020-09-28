@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+        <description>HttpSessionListener</description>
+        <listener-class>controller.SessionsListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>GameBoardServlet</servlet-name>
+        <servlet-class>controller.GameBoradServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PlayServlet</servlet-name>
+        <servlet-class>controller.Play</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetGameServlet</servlet-name>
+        <servlet-class>controller.ResetGameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuitGameServlet</servlet-name>
+        <servlet-class>controller.QuitGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameBoardServlet</servlet-name>
+        <url-pattern>/viewBoard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PlayServlet</servlet-name>
+        <url-pattern>/play</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetGameServlet</servlet-name>
+        <url-pattern>/reset</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuitGameServlet</servlet-name>
+        <url-pattern>/quit</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>viewBoard</welcome-file>
+    </welcome-file-list>
+</web-app>
